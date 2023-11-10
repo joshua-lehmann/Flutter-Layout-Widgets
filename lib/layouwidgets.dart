@@ -5,9 +5,10 @@ class LayoutWidgets extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
       height: 500,
       width: 800,
+      color: Colors.grey,
       child: Row(
         children: [
           Expanded(
@@ -29,30 +30,40 @@ class LayoutWidgets extends StatelessWidget {
                         color: Colors.black,
                       ),
                       Container(
-                        height: 200,
-                        width: 100,
+                        height: 100,
+                        width: 200,
                         color: Colors.purple,
                       ),
                     ],
                   ),
                   const SizedBox(height: 20),
-                  Container(decoration: BoxDecoration(border: Border.all(color:Colors.black)), height: 100, child: ListView(children: [
-                    Container(
-                      height: 50,
-                      color: Colors.blue,
-                      child: const Text('ListView 1'),
-                    ),
-                    Container(
-                      height: 50,
-                      color: Colors.yellow,
-                      child: const Text('ListView 2'),
-                    ),
-                    Container(
-                      height: 50,
-                      color: Colors.orange,
-                      child: const Text('ListView 3'),
-                    ),
-                  ]),),
+                  Container(
+                    decoration:
+                        BoxDecoration(border: Border.all(color: Colors.black)),
+                    height: 100,
+                    child: ListView(children: [
+                      Container(
+                        height: 50,
+                        color: Colors.blue,
+                        child: const Text('ListView 1'),
+                      ),
+                      Container(
+                        height: 50,
+                        color: Colors.yellow,
+                        child: const Text('ListView 2'),
+                      ),
+                      Container(
+                        height: 50,
+                        color: Colors.orange,
+                        child: const Text('ListView 3'),
+                      ),
+                      Container(
+                        height: 50,
+                        color: Colors.red,
+                        child: const Text('ListView 4'),
+                      ),
+                    ]),
+                  ),
                   const SizedBox(height: 20),
                   Expanded(
                     flex: 1,
@@ -68,7 +79,6 @@ class LayoutWidgets extends StatelessWidget {
                       child: const Text('Expanded 2'),
                     ),
                   ),
-
                 ],
               ),
             ),
