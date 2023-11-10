@@ -6,7 +6,7 @@ class FlexBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.yellowAccent.shade100,
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -31,7 +31,7 @@ class FlexBox extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 20), // Platz zwischen den Widgets
+          const SizedBox(height: 20), // Platz zwischen den Widgets
 
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -39,18 +39,18 @@ class FlexBox extends StatelessWidget {
             children: <Widget>[
               Container(
                 color: Colors.orange,
-                padding: EdgeInsets.all(8),
-                child: Text('Element 1'),
+                padding: const EdgeInsets.all(8),
+                child: const Text('Element 1'),
               ),
               Container(
                 color: Colors.yellow,
-                padding: EdgeInsets.all(8),
-                child: Text('Element 2'),
+                padding: const EdgeInsets.all(8),
+                child: const Text('Element 2'),
               ),
               Container(
                 color: Colors.teal,
-                padding: EdgeInsets.all(8),
-                child: Text('Element 3'),
+                padding: const EdgeInsets.all(8),
+                child: const Text('Element 3'),
               ),
             ],
           ),
