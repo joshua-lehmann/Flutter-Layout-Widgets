@@ -6,7 +6,7 @@ class LayoutWidgets extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 700,
+      height: 500,
       width: 800,
       child: Row(
         children: [
@@ -20,17 +20,17 @@ class LayoutWidgets extends StatelessWidget {
                     children: <Widget>[
                       Container(
                         width: 300,
-                        height: 300,
+                        height: 200,
                         color: Colors.red,
                       ),
                       Container(
                         width: 250,
-                        height: 250,
+                        height: 150,
                         color: Colors.black,
                       ),
                       Container(
                         height: 200,
-                        width: 200,
+                        width: 100,
                         color: Colors.purple,
                       ),
                     ],
