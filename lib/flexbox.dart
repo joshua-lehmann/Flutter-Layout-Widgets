@@ -18,20 +18,23 @@ class FlexBox extends StatelessWidget {
                 width: 50,
                 height: 50,
                 color: Colors.red,
+                child: Text('Row 1'),
               ),
               Container(
                 width: 50,
                 height: 50,
                 color: Colors.green,
+                child: Text('Row 2'),
               ),
               Container(
                 width: 50,
                 height: 50,
                 color: Colors.blue,
+                child: Text('Row 3'),
               ),
             ],
           ),
-          SizedBox(height: 20), // Platz zwischen den Widgets
+          SizedBox(height: 30), // Platz zwischen den Widgets
 
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -40,17 +43,17 @@ class FlexBox extends StatelessWidget {
               Container(
                 color: Colors.orange,
                 padding: EdgeInsets.all(8),
-                child: Text('Element 1'),
+                child: Text('Column 1'),
               ),
               Container(
                 color: Colors.yellow,
                 padding: EdgeInsets.all(8),
-                child: Text('Element 2'),
+                child: Text('Column 2'),
               ),
               Container(
                 color: Colors.teal,
                 padding: EdgeInsets.all(8),
-                child: Text('Element 3'),
+                child: Text('Column 3'),
               ),
             ],
           ),
